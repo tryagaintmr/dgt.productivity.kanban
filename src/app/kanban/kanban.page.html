@@ -4,7 +4,7 @@
     <ion-buttons slot="end">
       <ion-item lines="none">
         <!-- <ion-label>Select Kanban</ion-label> -->
-        <ion-select id="" interface="popover"  placeholder="Select Kanban" [(ngModel)]="selectedKanbanIndex" [interfaceOptions]="{ cssClass: 'kanban-select' }" (ionChange)="onKanbanSelect(selectedKanbanIndex)">
+        <ion-select id="selectKanbanDdl"   placeholder="Select Kanban" [(ngModel)]="selectedKanbanIndex" [interfaceOptions]="{ cssClass: 'kanban-select' }" (ionChange)="onKanbanSelect(selectedKanbanIndex)">
           <ion-select-option *ngFor="let kanban of kanbans; let i = index" [value]="i">{{ kanban.title }}</ion-select-option>
         </ion-select>
 

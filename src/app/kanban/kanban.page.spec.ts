@@ -67,5 +67,13 @@ describe('KanbanPage', () => {
     expect(ionTitle.textContent.trim()).toEqual(`kanban ${kanban.title}`);
   });
 
+  it('should contain ion-select-options equal to KANBANS length if the select interface is popover', () => {
+    const selectEl = fixture.debugElement.query(By.css('#selectKanbanDdl'));
+    if (selectEl.nativeElement.getAttribute('interface') === 'popover') {
+      const optionEls = selectEl.nativeElement.querySelectorAll('ion-select-option');
+      expect(optionEls.length).toEqual(component.kanbans.length);
+    }
+  });
+
 
 });

@@ -1,31 +1,35 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome Headless 109.0.5412.0 (Windows 10)" package="" timestamp="2023-03-10T23:07:25" id="0" hostname="BRU-614" tests="21" errors="0" failures="0" time="0.168">
+<testsuite name="Chrome Headless 109.0.5412.0 (Windows 10)" package="" timestamp="2023-03-10T23:15:58" id="0" hostname="BRU-614" tests="22" errors="0" failures="0" time="0.15">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/109.0.5412.0 Safari/537.36"/>
   </properties>
-  <testcase name="EnumToArrayPipe create an instance" time="0.018" classname="Chrome_Headless_109_0_5412_0_(Windows_10).EnumToArrayPipe"/>
-  <testcase name="HttpMockRequestInterceptorService should be created" time="0.006" classname="Chrome_Headless_109_0_5412_0_(Windows_10).HttpMockRequestInterceptorService"/>
-  <testcase name="PageNotFoundComponent should create" time="0.009" classname="Chrome_Headless_109_0_5412_0_(Windows_10).PageNotFoundComponent"/>
-  <testcase name="PageErrorComponent should create" time="0.005" classname="Chrome_Headless_109_0_5412_0_(Windows_10).PageErrorComponent"/>
-  <testcase name="SpcontextService should be created" time="0.004" classname="Chrome_Headless_109_0_5412_0_(Windows_10).SpcontextService"/>
-  <testcase name="AdalService should be created" time="0.003" classname="Chrome_Headless_109_0_5412_0_(Windows_10).AdalService"/>
-  <testcase name="UrlHelper should return true if in Url Params" time="0" classname="Chrome_Headless_109_0_5412_0_(Windows_10).UrlHelper"/>
-  <testcase name="SeqClientService should be created" time="0.004" classname="Chrome_Headless_109_0_5412_0_(Windows_10).SeqClientService"/>
-  <testcase name="IsoToShortPipe should transform ISO string to formatted date in french" time="0.001" classname="Chrome_Headless_109_0_5412_0_(Windows_10).IsoToShortPipe"/>
-  <testcase name="IsoToShortPipe should return &quot;date is undefined&quot; for undefined input" time="0.001" classname="Chrome_Headless_109_0_5412_0_(Windows_10).IsoToShortPipe"/>
-  <testcase name="IsoToShortPipe create an instance" time="0" classname="Chrome_Headless_109_0_5412_0_(Windows_10).IsoToShortPipe"/>
+  <testcase name="SeqClientService should be created" time="0.017" classname="Chrome_Headless_109_0_5412_0_(Windows_10).SeqClientService"/>
   <testcase name="GlobalErrorHandlerService should be created" time="0.001" classname="Chrome_Headless_109_0_5412_0_(Windows_10).GlobalErrorHandlerService"/>
+  <testcase name="PageNotFoundComponent should create" time="0.008" classname="Chrome_Headless_109_0_5412_0_(Windows_10).PageNotFoundComponent"/>
+  <testcase name="HttpRequestInterceptorService should be created" time="0.002" classname="Chrome_Headless_109_0_5412_0_(Windows_10).HttpRequestInterceptorService"/>
+  <testcase name="HttpMockRequestInterceptorService should be created" time="0.003" classname="Chrome_Headless_109_0_5412_0_(Windows_10).HttpMockRequestInterceptorService"/>
+  <testcase name="EnumToArrayPipe create an instance" time="0" classname="Chrome_Headless_109_0_5412_0_(Windows_10).EnumToArrayPipe"/>
+  <testcase name="UrlHelper should return true if in Url Params" time="0.001" classname="Chrome_Headless_109_0_5412_0_(Windows_10).UrlHelper"/>
+  <testcase name="PageErrorComponent should create" time="0.006" classname="Chrome_Headless_109_0_5412_0_(Windows_10).PageErrorComponent"/>
+  <testcase name="SpcontextService should be created" time="0.005" classname="Chrome_Headless_109_0_5412_0_(Windows_10).SpcontextService"/>
+  <testcase name="UiStateService should be created" time="0.002" classname="Chrome_Headless_109_0_5412_0_(Windows_10).UiStateService"/>
   <testcase name="LoggerService should be created" time="0.004" classname="Chrome_Headless_109_0_5412_0_(Windows_10).LoggerService"/>
-  <testcase name="HttpRequestInterceptorService should be created" time="0.003" classname="Chrome_Headless_109_0_5412_0_(Windows_10).HttpRequestInterceptorService"/>
-  <testcase name="KanbanPage should update selectedKanban, selectedKanbanTitle, and ion-title when onKanbanSelect is called" time="0.029" classname="Chrome_Headless_109_0_5412_0_(Windows_10).KanbanPage"/>
-  <testcase name="KanbanPage should create" time="0.015" classname="Chrome_Headless_109_0_5412_0_(Windows_10).KanbanPage"/>
-  <testcase name="KanbanPage should set selectedKanban and selectedKanbanIndex when onKanbanSelect is called with a valid kanban id" time="0.015" classname="Chrome_Headless_109_0_5412_0_(Windows_10).KanbanPage"/>
-  <testcase name="KanbanPage should not update selectedKanban and selectedKanbanIndex when onKanbanSelect is called with non-existing kanban id" time="0.026" classname="Chrome_Headless_109_0_5412_0_(Windows_10).KanbanPage"/>
-  <testcase name="KanbanPage should not update selectedKanban and selectedKanbanIndex when onKanbanSelect is called with index 0" time="0.015" classname="Chrome_Headless_109_0_5412_0_(Windows_10).KanbanPage"/>
+  <testcase name="IsoToShortPipe create an instance" time="0" classname="Chrome_Headless_109_0_5412_0_(Windows_10).IsoToShortPipe"/>
+  <testcase name="IsoToShortPipe should return &quot;date is undefined&quot; for undefined input" time="0.001" classname="Chrome_Headless_109_0_5412_0_(Windows_10).IsoToShortPipe"/>
+  <testcase name="IsoToShortPipe should transform ISO string to formatted date in french" time="0.001" classname="Chrome_Headless_109_0_5412_0_(Windows_10).IsoToShortPipe"/>
+  <testcase name="AdalService should be created" time="0.004" classname="Chrome_Headless_109_0_5412_0_(Windows_10).AdalService"/>
   <testcase name="AppComponent should create the app" time="0.005" classname="Chrome_Headless_109_0_5412_0_(Windows_10).AppComponent"/>
-  <testcase name="UiStateService should be created" time="0.004" classname="Chrome_Headless_109_0_5412_0_(Windows_10).UiStateService"/>
+  <testcase name="KanbanPage should not update selectedKanban and selectedKanbanIndex when onKanbanSelect is called with non-existing kanban id" time="0.019" classname="Chrome_Headless_109_0_5412_0_(Windows_10).KanbanPage"/>
+  <testcase name="KanbanPage should create" time="0.012" classname="Chrome_Headless_109_0_5412_0_(Windows_10).KanbanPage"/>
+  <testcase name="KanbanPage should set selectedKanban and selectedKanbanIndex when onKanbanSelect is called with a valid kanban id" time="0.012" classname="Chrome_Headless_109_0_5412_0_(Windows_10).KanbanPage"/>
+  <testcase name="KanbanPage should not update selectedKanban and selectedKanbanIndex when onKanbanSelect is called with index 0" time="0.019" classname="Chrome_Headless_109_0_5412_0_(Windows_10).KanbanPage"/>
+  <testcase name="KanbanPage should update selectedKanban, selectedKanbanTitle, and ion-title when onKanbanSelect is called" time="0.016" classname="Chrome_Headless_109_0_5412_0_(Windows_10).KanbanPage"/>
+  <testcase name="KanbanPage should contain ion-select-options equal to KANBANS length if the select interface is popover" time="0.012" classname="Chrome_Headless_109_0_5412_0_(Windows_10).KanbanPage"/>
   <system-out>
-    <![CDATA[Firefox 110.0 (Windows 10) LOG: 'selectedKanban:', Object{id: 1, title: 'Design new website', description: 'Design a new website for a client', createdDate: '2022-03-01T10:00:00.000Z', createdBy: Object{ID: 1, EMail: 'johndoe@example.com', Title: 'John Doe'}, lastModifiedDate: '2022-03-02T15:30:00.000Z', lastModifiedBy: Object{ID: 2, EMail: 'janesmith@example.com', Title: 'Jane Smith'}}
+    <![CDATA[Firefox 110.0 (Windows 10) WARN: 'Spec 'GlobalErrorHandlerService should be created' has no expectations.'
+,Firefox 110.0 (Windows 10) WARN: 'Spec 'UrlHelper should return true if in Url Params' has no expectations.'
+,Firefox 110.0 (Windows 10) WARN: 'Spec 'KanbanPage should contain ion-select-options equal to KANBANS length if the select interface is popover' has no expectations.'
+,Firefox 110.0 (Windows 10) LOG: 'selectedKanban:', Object{id: 1, title: 'Design new website', description: 'Design a new website for a client', createdDate: '2022-03-01T10:00:00.000Z', createdBy: Object{ID: 1, EMail: 'johndoe@example.com', Title: 'John Doe'}, lastModifiedDate: '2022-03-02T15:30:00.000Z', lastModifiedBy: Object{ID: 2, EMail: 'janesmith@example.com', Title: 'Jane Smith'}}
 ,Firefox 110.0 (Windows 10) LOG: 'selectedKanbanIndex:', 0
 ,Firefox 110.0 (Windows 10) LOG: 'selectedKanbanId:', 1
 ,Firefox 110.0 (Windows 10) LOG: 'Selected Kanban: 1 - Title: Design new website'
@@ -37,13 +41,27 @@
 ,Firefox 110.0 (Windows 10) LOG: 'selectedKanbanIndex:', 1
 ,Firefox 110.0 (Windows 10) LOG: 'selectedKanbanId:', 1
 ,Firefox 110.0 (Windows 10) LOG: 'Selected Kanban: 2 - Title: Develop mobile app'
-,Firefox 110.0 (Windows 10) WARN: 'Spec 'GlobalErrorHandlerService should be created' has no expectations.'
-,Chrome Headless 109.0.5412.0 (Windows 10) WARN: 'Spec 'UrlHelper should return true if in Url Params' has no expectations.'
+,Chrome Headless 109.0.5412.0 (Windows 10) ERROR
+  Disconnected Client disconnected from CONNECTED state (ping timeout)
 ,Chrome Headless 109.0.5412.0 (Windows 10) WARN: 'Spec 'GlobalErrorHandlerService should be created' has no expectations.'
+,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanban:', Object{id: 1, title: 'Design new website', description: 'Design a new website for a client', createdDate: '2022-03-01T10:00:00.000Z', createdBy: Object{ID: 1, EMail: 'johndoe@example.com', Title: 'John Doe'}, lastModifiedDate: '2022-03-02T15:30:00.000Z', lastModifiedBy: Object{ID: 2, EMail: 'janesmith@example.com', Title: 'Jane Smith'}}
+,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanbanIndex:', 0
+,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanbanId:', 1
+,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'Selected Kanban: 1 - Title: Design new website'
+,Chrome Headless 109.0.5412.0 (Windows 10) WARN: 'Spec 'KanbanPage should contain ion-select-options equal to KANBANS length if the select interface is popover' has no expectations.'
+,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanban:', Object{id: 1, title: 'Design new website', description: 'Design a new website for a client', createdDate: '2022-03-01T10:00:00.000Z', createdBy: Object{ID: 1, EMail: 'johndoe@example.com', Title: 'John Doe'}, lastModifiedDate: '2022-03-02T15:30:00.000Z', lastModifiedBy: Object{ID: 2, EMail: 'janesmith@example.com', Title: 'Jane Smith'}}
+,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanbanIndex:', 1
+,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanbanId:', 1
+,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'Selected Kanban: 2 - Title: Develop mobile app'
 ,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanban:', Object{id: 1, title: 'Design new website', description: 'Design a new website for a client', createdDate: '2022-03-01T10:00:00.000Z', createdBy: Object{ID: 1, EMail: 'johndoe@example.com', Title: 'John Doe'}, lastModifiedDate: '2022-03-02T15:30:00.000Z', lastModifiedBy: Object{ID: 2, EMail: 'janesmith@example.com', Title: 'Jane Smith'}}
 ,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanbanIndex:', 2
 ,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanbanId:', 1
 ,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'Selected Kanban: 3 - Title: Write blog post'
+,Chrome Headless 109.0.5412.0 (Windows 10) WARN: 'Spec 'UrlHelper should return true if in Url Params' has no expectations.'
+,Firefox 110.0 (Windows 10) WARN: 'Spec 'GlobalErrorHandlerService should be created' has no expectations.'
+,Firefox 110.0 (Windows 10) WARN: 'Spec 'UrlHelper should return true if in Url Params' has no expectations.'
+,Chrome Headless 109.0.5412.0 (Windows 10) WARN: 'Spec 'GlobalErrorHandlerService should be created' has no expectations.'
+,Chrome Headless 109.0.5412.0 (Windows 10) WARN: 'Spec 'UrlHelper should return true if in Url Params' has no expectations.'
 ,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanban:', Object{id: 1, title: 'Design new website', description: 'Design a new website for a client', createdDate: '2022-03-01T10:00:00.000Z', createdBy: Object{ID: 1, EMail: 'johndoe@example.com', Title: 'John Doe'}, lastModifiedDate: '2022-03-02T15:30:00.000Z', lastModifiedBy: Object{ID: 2, EMail: 'janesmith@example.com', Title: 'Jane Smith'}}
 ,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanbanIndex:', 1
 ,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanbanId:', 1
@@ -52,6 +70,11 @@
 ,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanbanIndex:', 0
 ,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanbanId:', 1
 ,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'Selected Kanban: 1 - Title: Design new website'
+,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanban:', Object{id: 1, title: 'Design new website', description: 'Design a new website for a client', createdDate: '2022-03-01T10:00:00.000Z', createdBy: Object{ID: 1, EMail: 'johndoe@example.com', Title: 'John Doe'}, lastModifiedDate: '2022-03-02T15:30:00.000Z', lastModifiedBy: Object{ID: 2, EMail: 'janesmith@example.com', Title: 'Jane Smith'}}
+,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanbanIndex:', 2
+,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'selectedKanbanId:', 1
+,Chrome Headless 109.0.5412.0 (Windows 10) LOG: 'Selected Kanban: 3 - Title: Write blog post'
+,Chrome Headless 109.0.5412.0 (Windows 10) WARN: 'Spec 'KanbanPage should contain ion-select-options equal to KANBANS length if the select interface is popover' has no expectations.'
 
 ]]>
   </system-out>
