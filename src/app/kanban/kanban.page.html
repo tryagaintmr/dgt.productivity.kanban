@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>kanban {{ selectedKanban.title }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-item lines="none">
+        <!-- <ion-label>Select Kanban</ion-label> -->
+        <ion-select id="" interface="popover"  placeholder="Select Kanban" [(ngModel)]="selectedKanbanIndex" [interfaceOptions]="{ cssClass: 'kanban-select' }" (ionChange)="onKanbanSelect(selectedKanbanIndex)">
+          <ion-select-option *ngFor="let kanban of kanbans; let i = index" [value]="i">{{ kanban.title }}</ion-select-option>
+        </ion-select>
+
+      </ion-item>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Label:</ion-label>
+      <ion-text>{{ selectedKanban.title }}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Description:</ion-label>
+      <ion-text>{{ selectedKanban.description }}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Last Modified:</ion-label>
+      <ion-text>{{ selectedKanban.lastModifiedDate | isoToShort }}</ion-text>
+    </ion-item>
+  </ion-list>
+</ion-content>

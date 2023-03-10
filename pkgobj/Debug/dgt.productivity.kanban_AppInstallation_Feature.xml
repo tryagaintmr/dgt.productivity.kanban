@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="SharePointAddInTemplateDG App Install" Description="SharePoint Add-in Installation" Id="75c1e2cc-5340-4bda-9867-75e74e234824" Scope="Web" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementManifest Location="App\Elements.xml" />
+    <ElementFile Location="App\Sample.txt" />
+    <ElementFile Location="App\index.html" />
+    <ElementManifest Location="SettingsInstance\Elements.xml" />
+    <ElementManifest Location="Settings\Elements.xml" />
+    <ElementFile Location="Settings\Schema.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Images\Elements.xml" />
+        <ElementManifest Location="App\Elements.xml" />
+        <ElementManifest Location="SettingsInstance\Elements.xml" />
+        <ElementManifest Location="Settings\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

@@ -1,0 +1,5 @@
+C:\Temp\Kanban\dgt.productivity.kanban\dgt.productivity.kanban\bin\Debug\dgt.productivity.kanban.pdb
+C:\Temp\Kanban\dgt.productivity.kanban\dgt.productivity.kanban\obj\Debug\dgt.productivity.kanban.csproj.AssemblyReference.cache
+C:\Temp\Kanban\dgt.productivity.kanban\dgt.productivity.kanban\obj\Debug\dgt.productivity.kanban.csproj.CoreCompileInputs.cache
+C:\Temp\Kanban\dgt.productivity.kanban\dgt.productivity.kanban\obj\Debug\dgt.productivity.kanban.dll
+C:\Temp\Kanban\dgt.productivity.kanban\dgt.productivity.kanban\obj\Debug\dgt.productivity.kanban.pdb

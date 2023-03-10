@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="09fbbe2e-b0dc-4d81-a639-c9e12ae81579" SharePointProductVersion="16.0">
+  <FeatureManifests>
+    <FeatureManifest Location="dgt.productivity.kanban_AppInstallation\Feature.xml" />
+  </FeatureManifests>
+</Solution>
