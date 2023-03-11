@@ -63,6 +63,7 @@ describe('KanbanPage', () => {
     expect(component.selectedKanban).toEqual(kanban);
     expect(component.selectedKanban.title).toEqual(kanban.title);
     fixture.detectChanges();
+    
     const ionTitle = fixture.debugElement.query(By.css('ion-title')).nativeElement;
     expect(ionTitle.textContent.trim()).toEqual(`kanban ${kanban.title}`);
   });

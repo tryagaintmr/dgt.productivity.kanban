@@ -2,6 +2,7 @@ import { KanbanServiceMock } from './kanban-list-mock.service';
 import { KANBANS } from './data';
 import { Component, OnInit } from '@angular/core';
 import { IKanban } from './Kanban';
+import { AlertController, ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-kanban',
@@ -12,13 +13,17 @@ export class KanbanPage implements OnInit {
   kanbans: IKanban[] = [];
   selectedKanbanIndex = 0; // default index
   selectedKanban: IKanban = KANBANS[this.selectedKanbanIndex];
+  newKanbanTitle: string = '';
+  newKanbanDescription: string = '';
 
   ngOnInit(): void {
     this.kanbanService.getAllKanbans().subscribe(kanbans => {
       this.kanbans = kanbans;
     });
   }
-  constructor(private kanbanService: KanbanServiceMock) { }
+  constructor(private kanbanService: KanbanServiceMock,
+    private alertController: AlertController,
+    private modalController: ModalController) { }
 
 
   onKanbanSelect(selectedKanbanIndex: number) {
@@ -65,5 +70,32 @@ export class KanbanPage implements OnInit {
     });
   }
 
+  async onAddKanban() {
+    const modal = await this.modalController.create({
+      component: 'addKanbanModal'
+    });
+    return await modal.present();
+  }
+
+  async onAddKanbanModalClose() {
+    const modal = await this.modalController.getTop();
+    modal!.dismiss();
+  }
+
+  async onAddKanbanModalSubmit() {
+    const newKanban: IKanban = {
+    id: this.kanbans.length + 1,
+    title: this.newKanbanTitle,
+    description: this.newKanbanDescription,
+    createdDate: new Date().toISOString()
+    };
+
+    this.kanbans.push(newKanban);
+    this.selectedKanbanIndex = this.kanbans.indexOf(newKanban);
+    this.selectedKanban = newKanban;
+    this.newKanbanTitle = '';
+    this.newKanbanDescription = '';
+    this.onAddKanbanModalClose();
+  }
 
 }

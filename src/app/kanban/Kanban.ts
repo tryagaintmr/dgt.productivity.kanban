@@ -1,10 +1,10 @@
 import { ISPUser } from '@app/shared/models/ISPUser';
 export interface IKanban {
-  id: number;
+  id?: number;
   title: string;
   description: string;
-  createdDate: string;
-  createdBy: ISPUser;
-  lastModifiedDate: string;
-  lastModifiedBy: ISPUser;
+  createdDate?: string;
+  createdBy?: ISPUser;
+  lastModifiedDate?: string;
+  lastModifiedBy?: ISPUser;
 }

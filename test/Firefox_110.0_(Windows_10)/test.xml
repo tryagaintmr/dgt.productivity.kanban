@@ -1,64 +1,10 @@
 <?xml version="1.0"?>
-<testsuite name="Firefox 110.0 (Windows 10)" package="" timestamp="2023-03-10T23:34:02" id="0" hostname="BRU-614" tests="23" errors="0" failures="1" time="3.281">
+<testsuite name="Firefox 110.0 (Windows 10)" package="" timestamp="2023-03-11T00:14:07" id="0" hostname="BRU-614" tests="0" errors="0" failures="0" time="0">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0"/>
   </properties>
-  <testcase name="GlobalErrorHandlerService should be created" time="0.021" classname="Firefox_110_0_(Windows_10).GlobalErrorHandlerService"/>
-  <testcase name="HttpMockRequestInterceptorService should be created" time="0.021" classname="Firefox_110_0_(Windows_10).HttpMockRequestInterceptorService"/>
-  <testcase name="HttpRequestInterceptorService should be created" time="0.011" classname="Firefox_110_0_(Windows_10).HttpRequestInterceptorService"/>
-  <testcase name="LoggerService should be created" time="0.007" classname="Firefox_110_0_(Windows_10).LoggerService"/>
-  <testcase name="SpcontextService should be created" time="0.006" classname="Firefox_110_0_(Windows_10).SpcontextService"/>
-  <testcase name="UrlHelper should return true if in Url Params" time="0.001" classname="Firefox_110_0_(Windows_10).UrlHelper"/>
-  <testcase name="PageErrorComponent should create" time="1.014" classname="Firefox_110_0_(Windows_10).PageErrorComponent"/>
-  <testcase name="AppComponent should create the app" time="0.018" classname="Firefox_110_0_(Windows_10).AppComponent"/>
-  <testcase name="SeqClientService should be created" time="0.005" classname="Firefox_110_0_(Windows_10).SeqClientService"/>
-  <testcase name="UiStateService should be created" time="0.005" classname="Firefox_110_0_(Windows_10).UiStateService"/>
-  <testcase name="PageNotFoundComponent should create" time="1.023" classname="Firefox_110_0_(Windows_10).PageNotFoundComponent"/>
-  <testcase name="EnumToArrayPipe create an instance" time="0.001" classname="Firefox_110_0_(Windows_10).EnumToArrayPipe"/>
-  <testcase name="KanbanListMockService should be created" time="0.009" classname="Firefox_110_0_(Windows_10).KanbanListMockService"/>
-  <testcase name="KanbanPage should not update selectedKanban and selectedKanbanIndex when onKanbanSelect is called with index 0" time="0.057" classname="Firefox_110_0_(Windows_10).KanbanPage"/>
-  <testcase name="KanbanPage should update selectedKanban, selectedKanbanTitle, and ion-title when onKanbanSelect is called" time="0.044" classname="Firefox_110_0_(Windows_10).KanbanPage">
-    <failure type="">Expected 'Kanban Write blog post' to equal 'kanban Write blog post'.
-&lt;Jasmine&gt;
-6914/&lt;/&lt;@main.js:256:41
-invoke@polyfills.js:412:158
-onInvoke@vendor.js:128684:33
-invoke@polyfills.js:412:46
-run@polyfills.js:198:35
-runInTestZone@vendor.js:128963:28
-3761/&lt;/wrapTestInZone/&lt;@vendor.js:128978:14
-&lt;Jasmine&gt;
-invoke@polyfills.js:412:158
-run@polyfills.js:198:35
-4946/&lt;/scheduleResolveOrReject/&lt;@polyfills.js:1288:28
-invokeTask@polyfills.js:439:171
-runTask@polyfills.js:244:37
-drainMicroTaskQueue@polyfills.js:610:23
-</failure>
-  </testcase>
-  <testcase name="KanbanPage should not update selectedKanban and selectedKanbanIndex when onKanbanSelect is called with non-existing kanban id" time="0.033" classname="Firefox_110_0_(Windows_10).KanbanPage"/>
-  <testcase name="KanbanPage should set selectedKanban and selectedKanbanIndex when onKanbanSelect is called with a valid kanban id" time="0.963" classname="Firefox_110_0_(Windows_10).KanbanPage"/>
-  <testcase name="KanbanPage should contain ion-select-options equal to KANBANS length if the select interface is popover" time="0.016" classname="Firefox_110_0_(Windows_10).KanbanPage"/>
-  <testcase name="KanbanPage should create" time="0.017" classname="Firefox_110_0_(Windows_10).KanbanPage"/>
-  <testcase name="IsoToShortPipe should transform ISO string to formatted date in french" time="0.002" classname="Firefox_110_0_(Windows_10).IsoToShortPipe"/>
-  <testcase name="IsoToShortPipe create an instance" time="0" classname="Firefox_110_0_(Windows_10).IsoToShortPipe"/>
-  <testcase name="IsoToShortPipe should return &quot;date is undefined&quot; for undefined input" time="0.001" classname="Firefox_110_0_(Windows_10).IsoToShortPipe"/>
-  <testcase name="AdalService should be created" time="0.006" classname="Firefox_110_0_(Windows_10).AdalService"/>
   <system-out>
-    <![CDATA[Firefox 110.0 (Windows 10) LOG: 'selectedKanban:', Object{id: 1, title: 'Design new website', description: 'Design a new website for a client', createdDate: '2022-03-01T10:00:00.000Z', createdBy: Object{ID: 1, EMail: 'johndoe@example.com', Title: 'John Doe'}, lastModifiedDate: '2022-03-02T15:30:00.000Z', lastModifiedBy: Object{ID: 2, EMail: 'janesmith@example.com', Title: 'Jane Smith'}}
-,Firefox 110.0 (Windows 10) LOG: 'selectedKanbanIndex:', 0
-,Firefox 110.0 (Windows 10) LOG: 'selectedKanbanId:', 1
-,Firefox 110.0 (Windows 10) LOG: 'Selected Kanban: 1 - Title: Design new website'
-,Firefox 110.0 (Windows 10) LOG: 'selectedKanban:', Object{id: 1, title: 'Design new website', description: 'Design a new website for a client', createdDate: '2022-03-01T10:00:00.000Z', createdBy: Object{ID: 1, EMail: 'johndoe@example.com', Title: 'John Doe'}, lastModifiedDate: '2022-03-02T15:30:00.000Z', lastModifiedBy: Object{ID: 2, EMail: 'janesmith@example.com', Title: 'Jane Smith'}}
-,Firefox 110.0 (Windows 10) LOG: 'selectedKanbanIndex:', 2
-,Firefox 110.0 (Windows 10) LOG: 'selectedKanbanId:', 1
-,Firefox 110.0 (Windows 10) LOG: 'Selected Kanban: 3 - Title: Write blog post'
-,Firefox 110.0 (Windows 10) LOG: 'selectedKanban:', Object{id: 1, title: 'Design new website', description: 'Design a new website for a client', createdDate: '2022-03-01T10:00:00.000Z', createdBy: Object{ID: 1, EMail: 'johndoe@example.com', Title: 'John Doe'}, lastModifiedDate: '2022-03-02T15:30:00.000Z', lastModifiedBy: Object{ID: 2, EMail: 'janesmith@example.com', Title: 'Jane Smith'}}
-,Firefox 110.0 (Windows 10) LOG: 'selectedKanbanIndex:', 1
-,Firefox 110.0 (Windows 10) LOG: 'selectedKanbanId:', 1
-,Firefox 110.0 (Windows 10) LOG: 'Selected Kanban: 2 - Title: Develop mobile app'
-,Firefox 110.0 (Windows 10) WARN: 'Spec 'KanbanPage should contain ion-select-options equal to KANBANS length if the select interface is popover' has no expectations.'
-
+    <![CDATA[
 ]]>
   </system-out>
   <system-err/>
