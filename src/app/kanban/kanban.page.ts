@@ -1,3 +1,4 @@
+import { KanbanServiceMock } from './kanban-list-mock.service';
 import { KANBANS } from './data';
 import { Component, OnInit } from '@angular/core';
 import { IKanban } from './Kanban';
@@ -8,14 +9,17 @@ import { IKanban } from './Kanban';
   styleUrls: ['./kanban.page.scss'],
 })
 export class KanbanPage implements OnInit {
-  kanbans = KANBANS;
+  kanbans: IKanban[] = [];
   selectedKanbanIndex = 0; // default index
   selectedKanban: IKanban = KANBANS[this.selectedKanbanIndex];
 
   ngOnInit(): void {
-    //throw new Error('Method not implemented.');
+    this.kanbanService.getAllKanbans().subscribe(kanbans => {
+      this.kanbans = kanbans;
+    });
   }
-  constructor() { }
+  constructor(private kanbanService: KanbanServiceMock) { }
+
 
   onKanbanSelect(selectedKanbanIndex: number) {
     try {
@@ -35,4 +39,31 @@ export class KanbanPage implements OnInit {
       throw error
     }
   }
+
+  deleteKanban(id: number) {
+    this.kanbanService.deleteKanban(id).subscribe(() => {
+      // Remove the Kanban from the list
+      this.kanbans = this.kanbans.filter(k => k.id !== id);
+      console.log(`Kanban with ID ${id} deleted`);
+    });
+  }
+
+  addKanban() {
+    const newKanban: IKanban = {
+      id: this.kanbans.length + 1,
+      title: 'New Kanban',
+      description: 'New Kanban description',
+      createdDate: new Date().toISOString(),
+      createdBy: { ID: 1, EMail: 'johndoe@example.com', Title: 'John Doe' },
+      lastModifiedDate: new Date().toISOString(),
+      lastModifiedBy: { ID: 1, EMail: 'johndoe@example.com', Title: 'John Doe' }
+    };
+
+    this.kanbanService.addKanban(newKanban).subscribe(kanban => {
+      this.kanbans.push(kanban);
+      console.log(`Kanban with ID ${kanban.id} added`);
+    });
+  }
+
+
 }
