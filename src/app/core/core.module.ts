@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from '@app/app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 
@@ -12,13 +12,13 @@ import { AppRoutingModule } from '@app/app-routing.module';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    CommonModule,
+    BrowserModule
   ],
   exports : [
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    CommonModule
+    BrowserModule
   ],
   providers: []
 })

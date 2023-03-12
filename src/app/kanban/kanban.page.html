@@ -1,15 +1,19 @@
+
+
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      <ion-note>Kanban</ion-note>
-      {{ selectedKanban.title }}
+      <ion-note color="primary">WeKan2</ion-note>
     </ion-title>
     <ion-buttons slot="end">
+      <ion-item>
+        <ion-label color="medium">Select board: </ion-label>
+      </ion-item>
       <ion-item lines="none">
         <ion-select id="selectKanbanDdl"   placeholder="Select Kanban" [(ngModel)]="selectedKanbanIndex" [interfaceOptions]="{ cssClass: 'kanban-select' }" (ionChange)="onKanbanSelect(selectedKanbanIndex)">
           <ion-select-option *ngFor="let kanban of kanbans; let i = index" [value]="i">{{ kanban.title }}</ion-select-option>
         </ion-select>
-        <ion-button color="secondary" (click)="onAddKanban()">
+        <ion-button fill="solid" color="primary" (click)="onAddKanban()">
           <ion-icon slot="start" name="add-circle"></ion-icon>Nouveau
         </ion-button>
       </ion-item>
@@ -18,40 +22,7 @@
 </ion-header>
 
 <ion-content>
-
+  <div class="kanban-container">
+    <app-kanban-board [kanban]="selectedKanban"></app-kanban-board>
+  </div>
 </ion-content>
-
-<ng-template #addKanbanModal>
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>
-        Add Kanban
-      </ion-title>
-      <ion-buttons slot="end">
-        <ion-button (click)="onAddKanbanModalClose()">
-          <ion-icon slot="icon-only" name="close"></ion-icon>
-        </ion-button>
-      </ion-buttons>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
-    <ion-list>
-      <ion-item>
-        <ion-label position="stacked">Title</ion-label>
-        <ion-input [(ngModel)]="newKanbanTitle"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="stacked">Description</ion-label>
-        <ion-textarea [(ngModel)]="newKanbanDescription"></ion-textarea>
-      </ion-item>
-    </ion-list>
-  </ion-content>
-  <ion-footer>
-    <ion-toolbar>
-      <ion-buttons slot="end">
-        <ion-button (click)="onAddKanbanModalClose()">Cancel</ion-button>
-        <ion-button (click)="onAddKanbanModalSubmit()">OK</ion-button>
-      </ion-buttons>
-    </ion-toolbar>
-  </ion-footer>
-</ng-template>

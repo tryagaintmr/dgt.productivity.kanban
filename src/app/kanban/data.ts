@@ -1,4 +1,4 @@
-import { IKanban } from "./Kanban";
+import { IKanban, IKanbanTask } from "./Kanban";
 
 export const KANBANS: IKanban[] = [
   {
@@ -28,4 +28,80 @@ export const KANBANS: IKanban[] = [
     lastModifiedDate: '2022-03-07T16:15:00.000Z',
     lastModifiedBy: { ID: 2, EMail: 'janesmith@example.com', Title: 'Jane Smith' }
   }
+];
+
+
+export const KANBAN_TASKS: IKanbanTask[] = [
+  {
+    title: 'Task 1',
+    description: 'This is the first task',
+    status: 'new',
+    attachments: [],
+    assignedTo: 'User A',
+    dueDate: new Date(2023, 3, 15),
+    progress: 0,
+    impediment: '',
+    modifiedDate: new Date(),
+    modifiedBy: 'User A',
+    createdDate: new Date(),
+    createdBy: 'User A',
+    kanbanListId: 1,
+    color: '#0078D4',
+    tags: 'tag1, tag2',
+    className: 'user-picture'
+  },
+  {
+    title: 'Task 2',
+    description: 'This is the second task',
+    status: 'inProgress',
+    attachments: [],
+    assignedTo: 'User B',
+    dueDate: new Date(2023, 3, 16),
+    progress: 50,
+    impediment: 'blocked',
+    modifiedDate: new Date(),
+    modifiedBy: 'User B',
+    createdDate: new Date(),
+    createdBy: 'User A',
+    kanbanListId: 1,
+    color: '#F7630C',
+    tags: 'tag3,tag1',
+    className: 'user-picture'
+  },
+  {
+    title: 'Task 3',
+    description: 'This is the third task',
+    status: 'done',
+    attachments: [],
+    assignedTo: 'User C',
+    dueDate: new Date(2023, 3, 17),
+    progress: 100,
+    impediment: 'blocked',
+    modifiedDate: new Date(),
+    modifiedBy: 'User C',
+    createdDate: new Date(),
+    createdBy: 'User A',
+    kanbanListId: 1,
+    color: '#107C10',
+    tags: 'tag1',
+    className: 'user-picture'
+  },
+  {
+    title: 'Task 4',
+    description: 'This is the third task',
+    status: 'new',
+    attachments: [],
+    assignedTo: 'User C',
+    dueDate: new Date(2023, 3, 17),
+    progress: 100,
+    impediment: '',
+    modifiedDate: new Date(),
+    modifiedBy: 'User C',
+    createdDate: new Date(),
+    createdBy: 'User A',
+    kanbanListId: 1,
+    color: '#107C10',
+    tags: 'tag1',
+    className: 'user-picture'
+  },
 ];

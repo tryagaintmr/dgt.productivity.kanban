@@ -1,0 +1,20 @@
+<ng-container *ngIf="!kanban; else elseTemplate">
+  select a Kanban or Create a NEW ONE
+</ng-container>
+<ng-template #elseTemplate>
+  <ejs-kanban [dataSource]="kanbanData" keyField="status" [allowKeyboard]="true" [cardSettings]="cardSettings" [dialogSettings]='dialogSettings'>
+    <e-columns>
+      <e-column *ngFor="let column of columns;" [headerText]="column.headerText" [keyField]="column.keyField" allowToggle='true'>
+      </e-column>
+    </e-columns>
+     <e-stackedHeaders>
+      <e-stackedHeader text='To Do' keyFields='new'></e-stackedHeader>
+      <e-stackedHeader text='Development Phase' keyFields='inProgress, underReview'></e-stackedHeader>
+      <e-stackedHeader text='Done' keyFields='done'></e-stackedHeader>
+  </e-stackedHeaders>
+  </ejs-kanban>
+
+
+</ng-template>
+
+
