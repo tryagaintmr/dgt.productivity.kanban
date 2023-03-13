@@ -3,7 +3,7 @@ import { IKanban, IKanbanTask } from "./Kanban";
 export const KANBANS: IKanban[] = [
   {
     id: 1,
-    title: 'Design new website',
+    title: 'Engel',
     description: 'Design a new website for a client',
     createdDate: '2022-03-01T10:00:00.000Z',
     createdBy: { ID: 1, EMail: 'johndoe@example.com', Title: 'John Doe' },
@@ -12,7 +12,7 @@ export const KANBANS: IKanban[] = [
   },
   {
     id: 2,
-    title: 'Develop mobile app',
+    title: 'Trefle',
     description: 'Develop a new mobile app for iOS and Android',
     createdDate: '2022-03-03T09:00:00.000Z',
     createdBy: { ID: 2, EMail: 'janesmith@example.com', Title: 'Jane Smith' },
@@ -21,7 +21,7 @@ export const KANBANS: IKanban[] = [
   },
   {
     id: 3,
-    title: 'Write blog post',
+    title: 'Docker',
     description: 'Write a blog post about the benefits of using Angular',
     createdDate: '2022-03-06T14:30:00.000Z',
     createdBy: { ID: 1, EMail: 'johndoe@example.com', Title: 'John Doe' },
@@ -48,7 +48,8 @@ export const KANBAN_TASKS: IKanbanTask[] = [
     kanbanListId: 1,
     color: '#0078D4',
     tags: 'tag1, tag2',
-    className: 'user-picture'
+    className: 'user-picture',
+    taskGroup: 'MOA'
   },
   {
     title: 'Task 2',
@@ -66,7 +67,8 @@ export const KANBAN_TASKS: IKanbanTask[] = [
     kanbanListId: 1,
     color: '#F7630C',
     tags: 'tag3,tag1',
-    className: 'user-picture'
+    className: 'user-picture',
+    taskGroup: 'Development'
   },
   {
     title: 'Task 3',
@@ -84,11 +86,12 @@ export const KANBAN_TASKS: IKanbanTask[] = [
     kanbanListId: 1,
     color: '#107C10',
     tags: 'tag1',
-    className: 'user-picture'
+    className: 'user-picture',
+    taskGroup: 'Infrastructure'
   },
   {
     title: 'Task 4',
-    description: 'This is the third task',
+    description: 'This is the fourth task',
     status: 'new',
     attachments: [],
     assignedTo: 'User C',
@@ -101,7 +104,9 @@ export const KANBAN_TASKS: IKanbanTask[] = [
     createdBy: 'User A',
     kanbanListId: 1,
     color: '#107C10',
-    tags: 'tag1',
-    className: 'user-picture'
+    tags: 'LM, MM',
+    className: 'user-picture',
+    taskGroup: 'MOA'
   },
 ];
+

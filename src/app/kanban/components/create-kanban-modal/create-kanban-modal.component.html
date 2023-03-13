@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Add Kanban
+      Ajouter Kanban
     </ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="onClose()">
@@ -13,7 +13,7 @@
 <ion-content>
   <ion-list>
     <ion-item>
-      <ion-label position="stacked">Title</ion-label>
+      <ion-label position="stacked">Titre</ion-label>
       <ion-input [(ngModel)]="newKanban.title"></ion-input>
     </ion-item>
     <ion-item>
@@ -25,7 +25,7 @@
 <ion-footer>
   <ion-toolbar>
     <ion-buttons slot="end">
-      <ion-button (click)="onClose()">Cancel</ion-button>
+      <ion-button (click)="onClose()">Annuler</ion-button>
       <ion-button (click)="onSubmit()">OK</ion-button>
     </ion-buttons>
   </ion-toolbar>

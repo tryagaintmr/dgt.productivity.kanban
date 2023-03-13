@@ -2,16 +2,23 @@
   select a Kanban or Create a NEW ONE
 </ng-container>
 <ng-template #elseTemplate>
-  <ejs-kanban [dataSource]="kanbanData" keyField="status" [allowKeyboard]="true" [cardSettings]="cardSettings" [dialogSettings]='dialogSettings'>
+  <ejs-kanban
+  enablePersistence='true'
+  [dataSource]="kanbanData"
+  keyField="status"
+  [allowKeyboard]="true"
+  [cardSettings]="cardSettings"
+  [swimlaneSettings]='swimlaneSettings'
+  locale='fr'
+  [dialogSettings]='dialogSettings'>
+
     <e-columns>
       <e-column *ngFor="let column of columns;" [headerText]="column.headerText" [keyField]="column.keyField" allowToggle='true'>
       </e-column>
     </e-columns>
-     <e-stackedHeaders>
-      <e-stackedHeader text='To Do' keyFields='new'></e-stackedHeader>
-      <e-stackedHeader text='Development Phase' keyFields='inProgress, underReview'></e-stackedHeader>
-      <e-stackedHeader text='Done' keyFields='done'></e-stackedHeader>
-  </e-stackedHeaders>
+    <e-stackedHeaders>
+      <e-stackedHeader *ngFor="let header of stackedHeaders" [text]="header.text" [keyFields]="header.keyFields"></e-stackedHeader>
+    </e-stackedHeaders>
   </ejs-kanban>
 
 

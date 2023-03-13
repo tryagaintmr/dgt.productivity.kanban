@@ -26,5 +26,6 @@ export interface IKanbanTask {
   color:string;
   tags:string;
   className:string;
+  taskGroup: string;
 }
 

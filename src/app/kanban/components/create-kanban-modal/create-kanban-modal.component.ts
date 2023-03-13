@@ -32,10 +32,11 @@ export class CreateKanbanModalComponent implements OnInit {
   }
 
   async onSubmit() {
+
     const newKanban: IKanban = {
       id: Date.now(),
-      title: this.newKanbanTitle,
-      description: this.newKanbanDescription,
+      title: this.newKanban.title,
+      description: this.newKanban.description,
       createdDate: new Date().toISOString(),
       createdBy: undefined,
       lastModifiedDate: new Date().toISOString(),

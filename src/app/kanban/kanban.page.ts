@@ -1,8 +1,7 @@
 import { KanbanServiceMock } from './kanban-list-mock.service';
-import { KANBANS } from './data';
 import { Component, OnInit } from '@angular/core';
 import { IKanban } from './Kanban';
-import { AlertController, ModalController } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
 import { CreateKanbanModalComponent } from './components/create-kanban-modal/create-kanban-modal.component';
 
 @Component({
@@ -58,6 +57,9 @@ export class KanbanPage implements OnInit {
       component: CreateKanbanModalComponent
     });
     modal.onDidDismiss().then((result) => {
+
+      console.log('Kanban created', result);
+
       if (result && result.data) {
         this.kanbanService.addKanban(result.data).subscribe((newKanban: IKanban) => {
           console.log('New Kanban:', newKanban);
